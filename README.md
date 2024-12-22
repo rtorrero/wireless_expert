@@ -1,66 +1,67 @@
-# Wireless Network Expert System
+# Sistema Experto de Redes Inalámbricas
 
-A CLIPS-based expert system for diagnosing and providing recommendations for Wi-Fi network connectivity issues.
+Un sistema experto basado en CLIPS para diagnosticar y proporcionar recomendaciones para problemas de conectividad de redes Wi-Fi.
 
-## Overview
+## Descripción General
 
-This expert system analyzes various Wi-Fi connected devices and their network conditions to provide diagnostic information and recommendations for improving wireless connectivity. It takes into account factors such as:
+Este sistema experto analiza varios dispositivos conectados a Wi-Fi y sus condiciones de red para proporcionar información de diagnóstico y recomendaciones para mejorar la conectividad inalámbrica. Tiene en cuenta factores como:
 
-- Signal strength
-- Distance from router
-- Interference levels
-- Wi-Fi band (2.4GHz vs 5GHz)
-- Connection status
+- Fuerza de la señal
+- Distancia del enrutador
+- Niveles de interferencia
+- Banda Wi-Fi (2.4GHz vs 5GHz)
+- Estado de conexión
 
-## Features
+## Características
 
-- Diagnoses connection issues for multiple devices
-- Provides specific recommendations based on device conditions
-- Analyzes optimal band selection (2.4GHz vs 5GHz)
-- Monitors signal strength and distance thresholds
-- Evaluates interference levels
+- Diagnostica problemas de conexión para múltiples dispositivos
+- Proporciona recomendaciones específicas basadas en las condiciones del dispositivo
+- Analiza la selección óptima de banda (2.4GHz vs 5GHz)
+- Monitorea la fuerza de la señal y los umbrales de distancia
+- Evalúa los niveles de interferencia
 
-## System Requirements
+## Requisitos del Sistema
 
-- CLIPS (C Language Integrated Production System) environment
-- Any CLIPS-compatible IDE or command-line interface
+- Entorno CLIPS (Sistema de Producción Integrado en Lenguaje C)
+- Cualquier IDE o interfaz de línea de comandos compatible con CLIPS
 
-## Usage
+## Uso
 
-1. Start CLIPS environment
-2. Load the expert system:
+1. Iniciar el entorno CLIPS
+2. Cargar el sistema experto:
 ```bash
 (load "wireless-expert.clp")
+
 ```
-3. Reset the system:
+3. Reiniciar el sistema:
 ```bash
 (reset)
 ```
-4. Run the analysis:
+4. Ejecutar el análisis:
 ```bash
 (run)
 ```
 
-## Rule set
+## Conjunto de Reglas
 
-The system includes multiple diagnostic rules:
+El sistema incluye múltiples reglas de diagnóstico:
 
-- Device connectivity check
-- Signal strength analysis
-- Distance-based recommendations
-- Interference detection
-- Band selection optimization
-- Connection quality assessment
+- Verificación de conectividad del dispositivo
+- Análisis de la fuerza de la señal
+- Recomendaciones basadas en la distancia
+- Detección de interferencias
+- Optimización de la selección de banda
+- Evaluación de la calidad de la conexión
 
 
-## Input Data Structure
+## Estructura de Datos de Entrada
 
-Each device is represented with the following attributes:
+Cada dispositivo se representa con los siguientes atributos:
 
-- id: Device identifier
-- ssid: Network name
-- connected: Connection status (yes/no)
+- id: Identificador del dispositivo
+- ssid: Nombre de la red
+- connected: Estado de conexión (sí/no)
 - intensidad: Signal strength (0-100)
-- banda: Wi-Fi band (2.4GHz/5GHz)
-- distancia: Distance from router (meters)
-- interferencia: Interference level (baja/media/alta)
+- banda: Banda Wi-Fi (2.4GHz/5GHz)
+- distancia: Distancia del enrutador (metros)
+- interferencia: Nivel de interferencia (baja/media/alta)

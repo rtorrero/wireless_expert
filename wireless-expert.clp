@@ -67,15 +67,15 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; 3) Variables globales (defglobal)
-;;;    - Por ejemplo, el "umbral mínimo" de intensidad deseada
-;;;      o un "umbral máximo" de distancia
+;;;    - "umbral mínimo" de intensidad deseada
+;;;    - "umbral máximo" de distancia al router
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defglobal ?*umbral-intensidad* = 30)
 (defglobal ?*umbral-distancia*  = 15)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;; 4) Reglas (defrule) - 7 a 12 reglas
+;;; 4) Reglas (defrule)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;; Regla 1: Dispositivos desconectados
